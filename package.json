@@ -1,0 +1,14 @@
+{
+  "name": "iifeoluwa-fcc-timestamp",
+  "version": "1.0.0",
+  "description": "a timestamp freecodecamp project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arowosegbe Ifeoluwa",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
