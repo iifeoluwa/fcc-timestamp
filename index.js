@@ -4,11 +4,12 @@ const timestamp = require('./verify_timestamp')
 http.createServer((req, res) => {
 	
 	let url = unescape(req.url.replace('/', ''));
-	console.log(timestamp(url));
+	let result = timestamp(url);
 	
-	res.writeHead(200, {'Content-Type': 'text/plain'});
-			res.write('here ' + url.pathname);
-			res.end();
+	res.setHeader('Content-Type', 'application/json');
+	
+    res.write(JSON.stringify(result));
+	res.end();
 
 }).listen(3333)
 
