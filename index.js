@@ -36,6 +36,6 @@ http.createServer((req, res) => {
 		res.end();
 	}
 
-}).listen(3333)
+}).listen(process.env.PORT || 3333)
 
 console.log('App is runnig');
