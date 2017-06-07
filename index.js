@@ -14,8 +14,8 @@ http.createServer((req, res) => {
 				res.statusCode = 500;
 				res.setHeader('Content-Type', 'text/html');
 			    
-			    response.write('An error occurred. Please try again at a later time.');
-			    response.end();
+			    res.write('An error occurred. Please try again at a later time.');
+			    res.end();
 			}
 			
 			res.statusCode = 200;
